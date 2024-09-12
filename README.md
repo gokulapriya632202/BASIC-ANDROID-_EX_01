@@ -127,28 +127,25 @@ onCreate Executed
 
 
 onStart Executed
-```
+
 ![onStart](https://github.com/user-attachments/assets/0f29b3d1-bb7b-43d9-b1cc-e00d5c6b41ee)
 
-```
+
 
 onRestart Executed
-```
+
 ![onRestart](https://github.com/user-attachments/assets/2d082c29-adda-4cf2-9249-df5051eb5794)
 
-```
 
 onResume Executed
-```
+
 ![onResume](https://github.com/user-attachments/assets/f6668430-cd6f-48f2-b320-a155d861642e)
 
-```
 
 onPause Executed
-```
+
 ![onPause](https://github.com/user-attachments/assets/f98ae1ee-2fb2-4c96-bfd9-16d1ca809397)
 
-```
 
 
 ## RESULT:
