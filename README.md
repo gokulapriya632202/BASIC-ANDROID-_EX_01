@@ -1,3 +1,4 @@
+
 # BASIC-ANDROID-_EX_01
 
 
@@ -121,10 +122,9 @@ public class MainActivity extends AppCompatActivity {
 ## OUTPUT:
 
 onCreate Executed
-```
+
 ![onCreate](https://github.com/user-attachments/assets/b8fcb106-7148-4d00-b5ff-47cf726d35aa)
 
-```
 
 onStart Executed
 ```
