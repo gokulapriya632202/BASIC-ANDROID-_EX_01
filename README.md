@@ -1,1 +1,155 @@
 # BASIC-ANDROID-_EX_01
+
+
+## AIM:
+To create Hello world Activity using all lifecycles methods to display messages using android studio.
+
+## EQUIPMENTS REQUIRED:
+
+Android Studio(Min. required Artic Fox)
+
+
+## ALGORITHM:
+
+Step 1: Open Android Stdio and then click on File -> New -> New project.
+
+Step 2: Then type the Application name as HelloWorld and click Next.
+
+Step 3: Then select the Minimum SDK as shown below and click Next.
+
+Step 4: Then select the Empty Activity and click Next. Finally click Finish.
+
+Step 5: Design layout in activity_main.xml.
+
+Step 6: Display message give in MainActivity file.
+
+Step 7: Save and run the application.
+
+
+
+## PROGRAM:
+ ```
+/*
+Program to implement a Hello world Activity using all lifecycles methods using Android Studio .
+Developed by: GOKULA PRIYA P
+RegisterNumber:  212222040044
+*/
+```
+
+## MainActivity.java:
+
+
+```
+package com.example.experiment_1;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toast toast=Toast.makeText(getApplicationContext(),"OnCreate Executed",Toast.LENGTH_LONG);
+        toast.show();
+    }
+    protected void onStart(){
+        super.onStart();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnStart Executed",Toast.LENGTH_LONG);
+        toast.show();
+    }
+    protected void onResume(){
+        super.onResume();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnResume Executed",Toast.LENGTH_LONG);
+        toast.show();
+    }
+    protected void onPause(){
+        super.onPause();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnPause Executed",Toast.LENGTH_LONG);
+        toast.show();
+    }
+    protected void onStop(){
+        super.onStop();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnStop Executed",Toast.LENGTH_LONG);
+        toast.show();
+    }
+    protected void onRestart() {
+        super.onRestart();
+        Toast toast = Toast.makeText(getApplicationContext(), "OnRestart Executed", Toast.LENGTH_LONG);
+        toast.show();
+
+    }
+    protected void onDestroy(){
+        super.onDestroy();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnDestroy Executed",Toast.LENGTH_LONG);
+        toast.show();
+
+    }
+}
+```
+
+
+
+
+## activitymain.xml:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+
+## OUTPUT:
+
+onCreate Executed
+```
+![onCreate](https://github.com/user-attachments/assets/b8fcb106-7148-4d00-b5ff-47cf726d35aa)
+
+```
+
+onStart Executed
+```
+![onStart](https://github.com/user-attachments/assets/0f29b3d1-bb7b-43d9-b1cc-e00d5c6b41ee)
+
+```
+
+onRestart Executed
+```
+![onRestart](https://github.com/user-attachments/assets/2d082c29-adda-4cf2-9249-df5051eb5794)
+
+```
+
+onResume Executed
+```
+![onResume](https://github.com/user-attachments/assets/f6668430-cd6f-48f2-b320-a155d861642e)
+
+```
+
+onPause Executed
+```
+![onPause](https://github.com/user-attachments/assets/f98ae1ee-2fb2-4c96-bfd9-16d1ca809397)
+
+```
+
+
+## RESULT:
+Thus a program to implement the various life cycles of an activity is written and successfully executed using Android Studio.
